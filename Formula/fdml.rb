@@ -3,7 +3,7 @@ class Fdml < Formula
   homepage "https://shivsaranshthakur1-coder.github.io/fdml-core/"
   url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.0/fdml-core.jar", using: :nounzip
   version "0.3.0"
-  sha256 "PASTE_SHA256_HERE"
+  sha256 "7281324056e57970c9d10815f148ef8738e4b6a1a39b7a90fa287bb2ac6d7cb1"
 
   depends_on "openjdk@17"
 

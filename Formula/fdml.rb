@@ -1,9 +1,9 @@
 class Fdml < Formula
   desc "Folk Dance Markup Language CLI"
   homepage "https://shivsaranshthakur1-coder.github.io/fdml-core/"
-  url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.0/fdml-core.jar", using: :nounzip
+  url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.1/fdml-core.jar", using: :nounzip
   version "0.3.0"
-  sha256 "7281324056e57970c9d10815f148ef8738e4b6a1a39b7a90fa287bb2ac6d7cb1"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   depends_on "openjdk@17"
 

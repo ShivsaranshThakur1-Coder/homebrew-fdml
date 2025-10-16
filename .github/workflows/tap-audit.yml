@@ -1,0 +1,17 @@
+name: tap-audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Formula/**.rb'
+      - '.github/workflows/tap-audit.yml'
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Homebrew/actions/setup-homebrew@master
+      - run: brew update-reset
+      - run: brew vendor-gems
+      - run: brew style --fix "${{ github.repository }}"
+      - run: brew audit --tap "${{ github.repository }}" --formula --strict

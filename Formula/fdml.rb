@@ -4,7 +4,6 @@ class Fdml < Formula
   url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.2/fdml-core.jar", using: :nounzip
   version "0.3.2"
   sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
-  revision 1
 
   depends_on "openjdk@17"
 
@@ -13,7 +12,9 @@ class Fdml < Formula
     sha256 "d544d8689faf39bef01f8608a5640d59cd143161f8d116c7866a755dba383167"
   end
 
-  Rcdf4dc66fe13616e6b9028688ed7f5cffae899df3b8456228be682a31bfefe"
+  resource "fdml-schematron" do
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schematron/fdml-compiled.xsl"
+    sha256 "22cdf4dc66fe13616e6b9028688ed7f5cffae899df3b8456228be682a31bfefe"
   end
 
   def install

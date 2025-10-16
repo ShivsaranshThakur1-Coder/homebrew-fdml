@@ -5,6 +5,12 @@ class Fdml < Formula
   version "0.3.3"
   sha256 "0d038d4170dc9b6556d5b04f0036b440c3cf777f80ac470319d903a77a1b76ba"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
+
   depends_on "openjdk@17"
 
   resource "fdml-xsd" do

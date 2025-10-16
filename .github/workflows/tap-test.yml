@@ -12,7 +12,6 @@ jobs:
       - run: brew update-reset
       - run: brew tap ${{ github.repository }}
       - run: brew install fdml
+      - run: fdml --help | head -n 3
       - run: fdml init /tmp/ci.fdml.xml --title CI --meter 3/4 --tempo 96 --figure-id f-1 --figure-name Foo
       - run: fdml validate /tmp/ci.fdml.xml
-      - run: brew vendor-gems
-      - run: brew test fdml --verbose

@@ -2,6 +2,7 @@ name: tap-test
 on:
   workflow_dispatch:
   push:
+  pull_request:
 jobs:
   test:
     runs-on: macos-latest
@@ -9,8 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: Homebrew/actions/setup-homebrew@master
       - run: brew update-reset
-      - run: brew untap ${{ github.repository }} || true
-      - run: brew tap ${{ github.repository }}
       - run: brew install fdml
       - run: fdml --help | head -n 3
       - run: fdml init /tmp/ci.fdml.xml --title CI --meter 3/4 --tempo 96 --figure-id f-1 --figure-name Foo

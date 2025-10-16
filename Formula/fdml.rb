@@ -9,12 +9,12 @@ class Fdml < Formula
   depends_on "openjdk@17"
 
   resource "fdml-xsd" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schema/fdml.xsd"
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.2/schema/fdml.xsd"
     sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   end
 
   resource "fdml-schematron" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schematron/fdml-compiled.xsl"
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.2/schematron/fdml-compiled.xsl"
     sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   end
 

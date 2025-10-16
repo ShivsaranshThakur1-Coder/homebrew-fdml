@@ -9,13 +9,11 @@ class Fdml < Formula
   depends_on "openjdk@17"
 
   resource "fdml-xsd" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.2/schema/fdml.xsd"
-    sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schema/fdml.xsd"
+    sha256 "d544d8689faf39bef01f8608a5640d59cd143161f8d116c7866a755dba383167"
   end
 
-  resource "fdml-schematron" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.2/schematron/fdml-compiled.xsl"
-    sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  Rcdf4dc66fe13616e6b9028688ed7f5cffae899df3b8456228be682a31bfefe"
   end
 
   def install

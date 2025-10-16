@@ -1,19 +1,19 @@
 class Fdml < Formula
   desc "Folk Dance Markup Language CLI"
   homepage "https://shivsaranshthakur1-coder.github.io/fdml-core/"
-  url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.0/fdml-core.jar", using: :nounzip
-  version "0.3.0"
-  sha256 "7281324056e57970c9d10815f148ef8738e4b6a1a39b7a90fa287bb2ac6d7cb1"
+  url "https://github.com/ShivsaranshThakur1-Coder/fdml-core/releases/download/v0.3.3/fdml-core.jar", using: :nounzip
+  version "0.3.3"
+  sha256 "0d038d4170dc9b6556d5b04f0036b440c3cf777f80ac470319d903a77a1b76ba"
 
   depends_on "openjdk@17"
 
   resource "fdml-xsd" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schema/fdml.xsd"
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.3/schema/fdml.xsd"
     sha256 "d544d8689faf39bef01f8608a5640d59cd143161f8d116c7866a755dba383167"
   end
 
   resource "fdml-schematron" do
-    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.0/schematron/fdml-compiled.xsl"
+    url "https://raw.githubusercontent.com/ShivsaranshThakur1-Coder/fdml-core/v0.3.3/schematron/fdml-compiled.xsl"
     sha256 "22cdf4dc66fe13616e6b9028688ed7f5cffae899df3b8456228be682a31bfefe"
   end
 
